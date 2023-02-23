@@ -79,4 +79,35 @@ $destino= '../img/'.$nombreArchivo.'.'.$formato[1];
 ?>
 <?php
 // Manejo de fechas y horas 
+// se crea un input que reciba date y time  
+// o sino podemos poner que reciba fecha y hora juntos con type='datetime-local' 
+// cuando ingresan por formulario se ingresan como strings estos datos. por lo que hay que formatearlos a fecha y hora 
+// ¿como procesamos las fechas y horas? 
+
+if(!empty($_POST['fechayhora'])){
+    // pasamos de formato string a formato tiempo, primero configurando la zona horaria
+    date_default_timezone_set('America/Argentina/Buenos_Aires');
+    $hora = date_create ($_POST['fechayhora']);
+    // luego formateamos hora y fecha a gusto 
+
+    $formatoHora= date_format($hora,'H:i:s');
+    $formatoFecha= date_format ($hora,'d-m-Y'); 
+}else{
+    echo '<p>Faltan datos</p>';
+} 
+
+// Si quieiseramos poner la fecha de ahora en este momento sería7
+date_default_timezone_set('Argentina');
+$fechaActual= date('d-m-Y H:i');
+
+// Para realizar operaciones matematicas con el tiempo pasamos la fecha o hora a formato entero 
+$entero = strtotime('fecha'); 
+// Esta funcion recibe un string y devuelve un entero 
+?>
+
+<?php
+// Funciones para BASES DE DATOS 
+
+
+
 ?>
