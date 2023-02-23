@@ -1,0 +1,168 @@
+*{
+    margin: 0px auto;
+    padding: 0px;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color:#0a0a0a;
+    color: white;
+}
+
+h1 {
+    padding: 0.5em 0;
+}
+
+h2{
+    margin-top: 1.8em;
+    margin-bottom: 0.9em;
+}
+
+h3{
+    margin-top: 1.6em;
+    margin-bottom: 0.8em;
+}
+
+h4{
+    margin-top: 1.4em;
+    margin-bottom: 0.7em;
+}
+
+.text-center{
+    text-align: center;
+}
+
+nav{
+    background-color: rgb(146, 191, 177);
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    height: min-content;
+    margin: 1em 0em;
+}
+
+nav a{
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: #DDD;
+    text-transform: uppercase;
+    background-color: rgb(105, 74, 56);
+}
+
+nav a:hover, nav a:focus {
+    background-color: khaki;
+    color:darkblue;
+}
+
+main{
+    margin: auto;
+    width: 80%;
+    margin-top: 1em; 
+}
+
+h1, h2, h3{
+    text-align: center;
+}
+
+form{
+    text-align: center;
+    padding: 1em;
+    width: 30%;
+    background-color: #DDD;
+}
+
+form label,form input{
+    margin-top: .5em;
+    padding: 0.5em;
+}
+
+form input[type=submit]{
+    margin-top: 1em;
+    padding: .3em .5em;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: .2em .3em;
+}
+
+table img{
+    width: 10em;
+}
+
+.img-tabla{
+    width: 10em;
+}
+
+.contenedor-article {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap; 
+   justify-content: center;
+   width: 90%;
+   margin: 0 auto;
+}
+
+form section {
+    display: flex;
+    flex-direction: row;
+}
+form section label {
+    width: 40%;
+    text-align: right;
+}
+
+form section input {
+    text-align: left;
+}
+
+form img {
+    width:50%;
+}
+legend {
+    font-size: 1.5em;
+}
+
+.contenedor-article article {
+    width: 45%;
+    border: 0.1em solid rgb(218, 214, 214);
+    margin: 1em;
+    text-align: center;
+}
+
+.contenedor-article p {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+article img {
+    width: 20vw;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.contenedor-article a {
+    display: inline-block;
+    padding: 0.5em;
+    background-color: rgb(166, 28, 60);
+    width: 45%;
+    margin-left: 0.3em;
+    text-align: center;
+    text-decoration: none;
+    color:white;
+}
