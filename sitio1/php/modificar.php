@@ -5,6 +5,15 @@
 
     // 1-a. Controle las variables necesarias, para impedir errores.
 
+ $conexion=conectar();
+ if ($conexion && !empty($_GET['id'])){
+   $id=$_GET['id'];
+    $consulta = 'SELECT * FROM juguetes WHERE id= \''.$id.'\'';
+      $resultado=mysqli_query($conexion,$consulta);    
+     echo $consulta;
+    desconectar ($conexion);
+ if(mysqli_num_rows($resultado)>0){
+    $fila=mysqli_fetch_array($resultado);
     // 1-b. Realice lo necesario para mostrar en el formulario 
     // los datos del producto seleccionado en index.php 
 ?>
@@ -43,8 +52,8 @@
                 echo '<p>No se pudo hacer la consulta</p>';
             }
 
-        }
-    }
+    //     }
+    // }
 
 ?>
 
